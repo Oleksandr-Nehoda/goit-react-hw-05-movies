@@ -1,0 +1,88 @@
+.container {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.img {
+  width: 180px;
+  height: 300px;
+}
+
+.films {
+  padding-top: 20px;
+}
+
+.contain {
+  display: flex;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: 2px solid gray;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.about {
+  padding-left: 40px;
+  padding-top: 50px;
+}
+
+.link {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: rgb(197, 193, 193);
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.cast {
+  padding-left: 40px;
+  border-bottom: 2px solid gray;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.text {
+  width: 500px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.linkCast {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: rgb(197, 193, 193);
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.image {
+  width: 180px;
+  display: block;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  margin: 10px;
+}
+
+.linkFilm {
+  text-decoration: none;
+  color: black;
+}
