@@ -4,13 +4,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(49, 48, 48);
+  background-color: rgb(255, 255, 255);
 }
 .homeTitle {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(49, 48, 48);
 }
 
 .homeList {
@@ -36,6 +36,6 @@
 .homeItemTitle {
   font-size: 14px;
   font-weight: 700;
-  color: rgb(228, 149, 52);
+  color: rgb(49, 48, 48);
   width: 140px;
 }

@@ -14,6 +14,9 @@ const Movies = () => {
         if (!movieName) return
         ApiQuery(movieName).then(resp => {
             const {data} = resp;
+            if (data.results.length === 0) {
+                return alert(`No Movies found with that name ${movieName}`)
+            }
             setMovie(data.results)})
     }, [params])
 
@@ -23,6 +26,9 @@ const Movies = () => {
 
     const onSubmit = e => {
         e.preventDefault()
+        if (query.trim() === '') {
+            return alert('Input value can not be empty');
+          }
         setParams({ query })
     }
  
