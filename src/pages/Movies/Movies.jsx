@@ -21,7 +21,7 @@ const Movies = () => {
     }, [params])
 
     const onChange = e => {
-        setQuery(e.target.value)
+        setQuery(e.target.value);
     }
 
     const onSubmit = e => {
@@ -29,7 +29,7 @@ const Movies = () => {
         if (query.trim() === '') {
             return alert('Input value can not be empty');
           }
-        setParams({ query })
+        setParams({ query: query })
     }
  
     return <div className={css.container}>

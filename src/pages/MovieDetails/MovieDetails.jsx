@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ApiMovieInfo } from '../../components/Api';
+import { Suspense } from 'react';
 
 const MovieDetails = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const MovieDetails = () => {
   }, [movieId]);
 
   const handleGoBack = () => {
-    navigate(location.state.from);
+    navigate(location.state?.from ?? '/movies');
   };
 
   if (!movie) {
@@ -77,7 +78,9 @@ const MovieDetails = () => {
         </ul>
       </div>
       <div className={css.about}>
-        <Outlet />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Outlet />
+        </Suspense>
       </div>
     </div>
   );
