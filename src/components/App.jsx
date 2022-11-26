@@ -1,6 +1,7 @@
 import { Routes, Route, NavLink } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Home from '../pages/Home/Home';
+import { RiMovie2Line, RiHome2Line } from "react-icons/ri";
 import css from './App.module.css';
 
 const Movies = lazy(() => import('../pages/Movies/Movies'));
@@ -13,9 +14,11 @@ export const App = () => {
     <div className={css.App}>
       <nav className={css.navigation}>
         <NavLink className={css.navLink} to="/">
+          <RiHome2Line className={css.icon}/>
           Home
         </NavLink>
         <NavLink className={css.navLink} to="/movies">
+          <RiMovie2Line className={css.icon}/>
           Movies
         </NavLink>
       </nav>

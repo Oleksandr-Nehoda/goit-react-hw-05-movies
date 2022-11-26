@@ -26,6 +26,11 @@
   cursor: pointer;
   margin-left: 40px;
   margin-bottom: 10px;
+  transition: background-color 300ms;
+}
+
+.link:hover {
+  background-color: tomato;
 }
 
 .cast {
@@ -51,6 +56,11 @@
   padding: 10px 15px;
   cursor: pointer;
   margin-right: 10px;
+  transition: background-color 300ms;
+}
+
+.linkCast:hover {
+  background-color: tomato;
 }
 
 .img {
